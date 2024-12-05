@@ -1,12 +1,12 @@
 # Advent of Code 2024
 
-[![](https://github.com/nlowe/aoc2024/workflows/CI/badge.svg)](https://github.com/nlowe/aoc2024/actions) [![Coverage Status](https://coveralls.io/repos/github/nlowe/aoc2024/badge.svg?branch=master)](https://coveralls.io/github/nlowe/aoc2024?branch=master) [![Go Report Card](https://goreportcard.com/badge/github.com/nlowe/aoc2024)](https://goreportcard.com/report/github.com/nlowe/aoc2024) [![License](https://img.shields.io/badge/license-MIT-brightgreen)](./LICENSE)
+[![](https://github.com/ibratoev/aoc2024/workflows/CI/badge.svg)](https://github.com/ibratoev/aoc2024/actions) [![Coverage Status](https://coveralls.io/repos/github/nlowe/aoc2024/badge.svg?branch=master)](https://coveralls.io/github/nlowe/aoc2024?branch=master) [![Go Report Card](https://goreportcard.com/badge/github.com/ibratoev/aoc2024)](https://goreportcard.com/report/github.com/ibratoev/aoc2024) [![License](https://img.shields.io/badge/license-MIT-brightgreen)](./LICENSE)
 
 Solutions for the 2024 Advent of Code
 
 ## Building
 
-This project makes use of Go 1.21.
+This project makes use of Go 1.23.
 
 ```bash
 go mod download

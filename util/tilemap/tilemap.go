@@ -8,8 +8,8 @@ import (
 
 	"github.com/beefsack/go-astar"
 
-	"github.com/nlowe/aoc2024/challenge"
-	"github.com/nlowe/aoc2024/util/gmath"
+	"github.com/ibratoev/aoc2024/challenge"
+	"github.com/ibratoev/aoc2024/util/gmath"
 )
 
 type Point struct{ X, Y int }

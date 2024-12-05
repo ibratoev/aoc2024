@@ -14,10 +14,10 @@ import (
 	"github.com/spf13/viper"
 {{- if gt .N 0 }}
 {{ range $day := seq 1 .N }}
-	"github.com/nlowe/aoc2024/challenge/day{{ $day }}"
+	"github.com/ibratoev/aoc2024/challenge/day{{ $day }}"
 {{- end }}
 {{- end}}
-	"github.com/nlowe/aoc2024/challenge/example"
+	"github.com/ibratoev/aoc2024/challenge/example"
 )
 
 func addDays(root *cobra.Command) {
@@ -97,8 +97,8 @@ import (
     "fmt"
     "io"
 
-    "github.com/nlowe/aoc2024/challenge"
-	"github.com/nlowe/aoc2024/util"
+    "github.com/ibratoev/aoc2024/challenge"
+	"github.com/ibratoev/aoc2024/util"
 	"github.com/spf13/cobra"
 )
 
@@ -122,7 +122,7 @@ func part{{ .AB | toUpper }}(input io.Reader) int {
 import (
 	"testing"
 
-	"github.com/nlowe/aoc2024/challenge"
+	"github.com/ibratoev/aoc2024/challenge"
 	"github.com/stretchr/testify/require"
 )
 
@@ -142,7 +142,7 @@ func Test{{ .AB }}(t *testing.T) {
 import (
 	"testing"
 
-	"github.com/nlowe/aoc2024/challenge"
+	"github.com/ibratoev/aoc2024/challenge"
 )
 
 func BenchmarkA(b *testing.B) {

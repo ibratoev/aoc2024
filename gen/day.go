@@ -11,8 +11,8 @@ import (
 	"text/template"
 	"time"
 
-	"github.com/nlowe/aoc2024/util"
-	"github.com/nlowe/aoc2024/util/gmath"
+	"github.com/ibratoev/aoc2024/util"
+	"github.com/ibratoev/aoc2024/util/gmath"
 )
 
 var (
@@ -54,7 +54,7 @@ func main() {
 }
 
 func goimports(file string) {
-	goimports := exec.Command("goimports", "-local", "github.com/nlowe/aoc2024", "-w", file)
+	goimports := exec.Command("goimports", "-local", "github.com/ibratoev/aoc2024", "-w", file)
 	if err := goimports.Run(); err != nil {
 		abort(err)
 	}

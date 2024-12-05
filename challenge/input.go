@@ -11,7 +11,7 @@ import (
 
 	"github.com/spf13/viper"
 
-	"github.com/nlowe/aoc2024/util"
+	"github.com/ibratoev/aoc2024/util"
 )
 
 // InputFile returns an io.Reader for the file pointed at by the --input flag. If the flag is not specified, it looks

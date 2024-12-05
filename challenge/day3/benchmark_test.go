@@ -3,7 +3,7 @@ package day3
 import (
 	"testing"
 
-	"github.com/nlowe/aoc2024/challenge"
+	"github.com/ibratoev/aoc2024/challenge"
 )
 
 func BenchmarkA(b *testing.B) {
