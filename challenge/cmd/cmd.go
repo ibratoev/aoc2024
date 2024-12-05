@@ -10,12 +10,12 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	"github.com/nlowe/aoc2024/challenge/day1"
-	"github.com/nlowe/aoc2024/challenge/day2"
-	"github.com/nlowe/aoc2024/challenge/day3"
-	"github.com/nlowe/aoc2024/challenge/day4"
-	"github.com/nlowe/aoc2024/challenge/day5"
-	"github.com/nlowe/aoc2024/challenge/example"
+	"github.com/ibratoev/aoc2024/challenge/day1"
+	"github.com/ibratoev/aoc2024/challenge/day2"
+	"github.com/ibratoev/aoc2024/challenge/day3"
+	"github.com/ibratoev/aoc2024/challenge/day4"
+	"github.com/ibratoev/aoc2024/challenge/day5"
+	"github.com/ibratoev/aoc2024/challenge/example"
 )
 
 func addDays(root *cobra.Command) {
