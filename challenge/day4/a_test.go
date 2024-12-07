@@ -8,8 +8,7 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
-func TestA(t *testing.T) {
-	input := strings.NewReader(`MMMSXXMASM
+const testInput = `MMMSXXMASM
 MSAMXMSMSA
 AMXSXMAAMM
 MSAMASMSMX
@@ -18,7 +17,10 @@ XXAMMXXAMA
 SMSMSASXSS
 SAXAMASAAA
 MAMMMXMMMM
-MXMXAXMASX`)
+MXMXAXMASX`
+
+func TestA(t *testing.T) {
+	input := strings.NewReader(testInput)
 
 	result := partA(input)
 
