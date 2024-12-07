@@ -26,14 +26,16 @@ func partB(input io.Reader) int {
 	enabled := true
 	mulRegex := regexp.MustCompile(`do\(\)|don't\(\)|mul\(([0-9]{1,3}),([0-9]{1,3})\)`)
 	for _, res := range mulRegex.FindAllStringSubmatch(challenge.Raw(input), -1) {
-		if res[0] == "do()" {
+		switch res[0] {
+		case "do()":
 			enabled = true
-		} else if res[0] == "don't()" {
+		case "don't()":
 			enabled = false
-		} else if enabled {
-			sum += util.MustAtoI(res[1]) * util.MustAtoI(res[2])
+		default:
+			if enabled {
+				sum += util.MustAtoI(res[1]) * util.MustAtoI(res[2])
+			}
 		}
-
 	}
 	return sum
 }
