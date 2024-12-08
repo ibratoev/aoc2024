@@ -24,16 +24,17 @@ func aCommand() *cobra.Command {
 
 const multiplier = 1000
 
-func checkUpdate(update []int, rules []int) bool {
+// checks if the update is correct; if not correct returns the indeces of the pair that breaks the update
+func checkUpdate(update []int, rules []int) (bool, int, int) {
 	for i, u := range update {
 		for j := 0; j < i; j++ {
 			if slices.Contains(rules, u*multiplier+update[j]) {
-				return false
+				return false, i, j
 			}
 		}
 	}
 
-	return true
+	return true, -1, -1
 }
 
 func partA(input io.Reader) int {
@@ -63,7 +64,7 @@ func partA(input io.Reader) int {
 				update[i] = util.MustAtoI(u)
 			}
 
-			if checkUpdate(update, rules) {
+			if s, _, _ := checkUpdate(update, rules); s {
 				if len(update)%2 == 0 {
 					panic(fmt.Sprintf("Unexpected update with even page numbers: %v", update))
 				}
