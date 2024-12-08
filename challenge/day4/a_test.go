@@ -4,8 +4,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ibratoev/aoc2024/challenge"
 	"github.com/stretchr/testify/require"
+
+	"github.com/ibratoev/aoc2024/challenge"
 )
 
 const testInput = `MMMSXXMASM
