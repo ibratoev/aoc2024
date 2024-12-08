@@ -15,6 +15,9 @@ import (
 	"github.com/ibratoev/aoc2024/challenge/day3"
 	"github.com/ibratoev/aoc2024/challenge/day4"
 	"github.com/ibratoev/aoc2024/challenge/day5"
+	"github.com/ibratoev/aoc2024/challenge/day6"
+	"github.com/ibratoev/aoc2024/challenge/day7"
+	"github.com/ibratoev/aoc2024/challenge/day8"
 	"github.com/ibratoev/aoc2024/challenge/example"
 )
 
@@ -25,6 +28,9 @@ func addDays(root *cobra.Command) {
 	day3.AddCommandsTo(root)
 	day4.AddCommandsTo(root)
 	day5.AddCommandsTo(root)
+	day6.AddCommandsTo(root)
+	day7.AddCommandsTo(root)
+	day8.AddCommandsTo(root)
 }
 
 type prof interface {
