@@ -33,9 +33,9 @@ func (p Puzzle) set(pos Position, r rune) {
 
 const (
 	Up    Direction = '^'
-	Right           = '>'
-	Down            = 'v'
-	Left            = '<'
+	Right Direction = '>'
+	Down  Direction = 'v'
+	Left  Direction = '<'
 )
 
 const Obstruction = '#'
